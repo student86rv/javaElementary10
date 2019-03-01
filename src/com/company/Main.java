@@ -53,6 +53,18 @@ public class Main extends Application {
                         x = x + 5;
                     }
                 }
+                if (event.getCode() == KeyCode.UP) {
+                    System.out.println("UP");
+                    if (y > 0) {
+                        y = y - 5;
+                    }
+                }
+                if (event.getCode() == KeyCode.DOWN) {
+                    System.out.println("DOWN");
+                    if (y < gc.getCanvas().getHeight() - 30) {
+                        y = y + 5;
+                    }
+                }
                 clear();
                 draw();
             }
